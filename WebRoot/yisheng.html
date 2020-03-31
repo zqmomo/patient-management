@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>患者管理系统</title>
+<meta name="description" content="这是一个 index 页面">
+<meta name="keywords" content="index">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="images/app-icon72x72@2x.png">
+<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+<link rel="stylesheet" href="css/amazeui.min.css"/>
+<link rel="stylesheet" href="css/admin.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/app.js"></script>
+</head>
+<body>
+</head>
+
+<body>
+<header class="am-topbar admin-header">
+  <div style="color:red;text-align:center;font-style:italic;font-size:x-large">患者信息管理</div>
+
+</header>
+<div class="am-cf admin-main"> 
+
+<div class="nav-navicon admin-main admin-sidebar">
+    
+    
+    <div class="sideMenu">
+      <h2 class="am-icon-flag"><em></em> <a href="yisheng.html">主页</a></h2>
+      <h3 class="am-icon-flag">病人管理</h3>
+      <ul>
+        <li class="func"><a href="chaxun.jsp">查询病人信息</a></li>
+        <li class="func"><a href="tianjia1.html">添加病人信息</a></li>
+        <li class="func"><a href="xiugai.html">修改病人信息</a></li>
+        <li class="func"><a href="shanchu.html">删除病人信息</a></li>
+      </ul>
+      <h3 class="am-icon-cart-plus"> 手术管理</h3>
+      <ul>
+        <li class="func"><a href="chaxun1.jsp">查询手术信息</a></li>
+        <li class="func"><a href="tianjia2.html">添加手术信息</a></li>
+      </ul>
+      <h3 class="am-icon-users">医护管理</h3>
+      <ul>
+        <li class="func"><a href="chaxun2.jsp">查询医护信息 </a></li>
+        <li class="func"><a href="tianjia3.html">添加医护信息</a></li>
+        <li class="func"><a href="xiugai2.html">修改医护信息</a></li>
+      </ul>
+    </div>
+    <!-- sideMenu End --> 
+    
+    <script type="text/javascript">
+			jQuery(".sideMenu").slide({
+				titCell:"h3", //鼠标触发对象
+				targetCell:"ul", //与titCell一一对应，第n个titCell控制第n个targetCell的显示隐藏
+				effect:"slideDown", //targetCell下拉效果
+				delayTime:300 , //效果时间
+				triggerTime:150, //鼠标延迟触发时间（默认150）
+				defaultPlay:true,//默认是否执行效果（默认true）
+				returnDefault:true //鼠标从.sideMen移走后返回默认状态（默认false）
+				});
+		</script> 
+
+   <div class=" admin-content">
+	
+		<div class="daohang">
+			<ul>
+				<li><button type="button" class="am-btn am-btn-default am-radius am-btn-xs"> 首页 </li>
+				<li><button type="button" class="am-btn am-btn-default am-radius am-btn-xs">帮助中心<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="">×</a></button></li>
+				<li><button type="button" class="am-btn am-btn-default am-radius am-btn-xs">病人管理<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="">×</a></button></li>
+				<li><button type="button" class="am-btn am-btn-default am-radius am-btn-xs">手术管理<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="">×</a></button></li>	
+			</ul>
+	
+</div>
+    
+</div>
+
+<div class="admin-biaogelist">
+   <h1>本系统宗旨：</h1><br>
+   本系统是为了医院更好的管理患者就诊信息以及患者病历，方便医护人员进行查阅。<br><br>
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="js/polyfill/rem.min.js"></script>
+<script src="js/polyfill/respond.min.js"></script>
+<script src="js/amazeui.legacy.js"></script>
+<![endif]--> 
+
+<!--[if (gte IE 9)|!(IE)]><!--> 
+<script src="js/amazeui.min.js"></script>
+<!--<![endif]-->
+
+
+
+</body>
+</html>
